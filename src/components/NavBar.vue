@@ -19,9 +19,9 @@
     <div class="flex items-center gap-2 font-medium text-lg">
       <span class="text-primary font-bold cursor-default">EN</span>
       
-      <span class="text-gray-300">|</span>
+      <span class="text-white">|</span>
       
-      <a href="/" class="text-gray-400 hover:text-gray-800 transition cursor-pointer" title="Switch to Ukrainian">
+      <a href="/" class="text-white transition cursor-pointer" title="Switch to Ukrainian">
         UA
       </a>
     </div>
