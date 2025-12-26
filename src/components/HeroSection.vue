@@ -3,7 +3,7 @@ import bgImage from '../assets/background.png'
 </script>
 
 <template>
-  <section class="relative h-screen w-full flex items-end justify-start text-left px-4 sm:px-8 md:px-10 lg:px-14 xl:px-20 pb-12">
+  <section id="home" class="relative h-screen w-full flex items-end justify-start text-left px-4 sm:px-8 md:px-10 lg:px-14 xl:px-20 pb-12">
     
     <div 
       class="absolute inset-0 bg-cover bg-center"
