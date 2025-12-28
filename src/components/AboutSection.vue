@@ -3,83 +3,82 @@ import aboutImage from '../assets/about.png'
 </script>
 
 <template>
-  <section id="about" class="py-20 px-20">
-    <div class="max-w-7xl mx-auto grid grid-cols-2 gap-12 items-center">
+  <section id="about" class="py-7 px-10">
+
+    <div class="flex justify-center mb-10">
+      <p class="text-title text-sm font-semibold tracking-wide">
+        — About Us — 
+      </p>
+    </div>
+        
+    <div class="max-w-7xl mx-auto grid grid-cols-2 gap-12 items-start mt-10">
       
       <div class="relative">
-        <div class="rounded-3xl overflow-hidden shadow-2xl">
-          <img 
-            :src="aboutImage" 
-            alt="About JustStay" 
-            class="w-full h-full object-cover"
-          >
-        </div>
+        <img 
+          :src="aboutImage" 
+          alt="About JustStay" 
+          class="w-140 h-68 rounded-2xl object-cover"
+          style="outline: 1px solid #c9c9c9; outline-offset: 10px;"
+        >
       </div>
 
       <div>
-        <p class="text-title text-sm font-semibold mb-2 tracking-wide">
-          — About Us — 
-        </p>
-        
-        <h2 class="text-heading text-5xl font-bold mb-6">
+
+        <h2 class="text-heading text-4xl font-bold mb-4">
           History of Just<span class="text-primary">Stay</span>
         </h2>
         
-        <p class="text-text text-base leading-relaxed mb-4">
+        <p class="text-text text-base font-medium leading-relaxed mb-4">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque 
-          assumenda incidunt in cum. Fugiat repellat cumque deserunt, at ipsum et 
-          iure explicabo perferendis. Why do we press harder on the remote control 
-          when we know the batteries are flat?
+          assumenda incidunt id cum. Fugiat repellat cumque delectus, at ipsum ad 
+          iure explicabo perferendis. If you're still reading this, congrats, you're 
+          officially a masochist.
         </p>
         
-        <p class="text-muted text-sm leading-relaxed mb-8">
-          Autam temporibus, neque voluptas officiis molestiae. At vero eos et 
-          accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium. 
-          Listening to a never-ending sales pitch, right? And why is it that when 
-          we're stuck in traffic, the other lane always seems to be moving faster? 
-          you need a pun, it's always out of ink?
+        <p class="text-muted text-sm leading-relaxed mb-4">
+          Autem temporibus, neque voluptas officiis molestiae. At vero eos et 
+          accusamus et iusto odio dignissimos ducimus. But hey, at least you’re not stuck in traffic, 
+          or worse, listening to a never-ending sales pitch, right?
         </p>
         
-        <button class="bg-primary text-white px-8 py-3 rounded-2xl font-bold text-base transition cursor-pointer">
+        <button class="bg-white text-primary px-8 py-3 rounded-2xl font-bold text-base transition cursor-pointer border-2 border-primary">
           Read More
         </button>
       </div>
       
     </div>
 
-    <div class="max-w-7xl mx-auto grid grid-cols-2 gap-12 items-center mt-32">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 gap-12 items-start mt-8">
       
       <div>
-        <h2 class="text-heading text-5xl font-bold mb-6">
+        <h2 class="text-heading text-4xl font-bold mb-4">
           Why Choose us?
         </h2>
         
-        <p class="text-text text-base leading-relaxed mb-4">
+        <p class="text-text text-base font-medium leading-relaxed mb-4">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque 
           assumenda incidunt in cum. Fugiat repellat cumque deserunt, at ipsum et 
-          iure explicabo perferendis. Why do we press harder on the remote control 
-          when we know the batteries are weak?
+          iure explicabo perferendis. 
         </p>
         
-        <p class="text-muted text-sm leading-relaxed mb-8">
+        <p class="text-muted text-sm leading-relaxed mb-4">
           Autam temporibus, neque voluptas officiis molestiae. At vero eos et 
           accusamus et iusto odio dignissimos ducimus. And why is it that one time 
           you need a pun, it's always out of ink?
         </p>
         
-        <button class="bg-primary text-white px-8 py-3 rounded-2xl font-bold text-base transition cursor-pointer">
+        <button class="bg-white text-primary px-8 py-3 rounded-2xl font-bold text-base transition cursor-pointer border-2 border-primary">
           Read More
         </button>
       </div>
 
       <div class="relative">
-        <div class="rounded-3xl overflow-hidden shadow-2xl">
-          <img 
-            :src="aboutImage" 
-            alt="Why Choose Us" 
-            class="w-full h-full object-cover"
-          >
-        </div>
+        <img 
+          :src="aboutImage" 
+          alt="About JustStay" 
+          class="w-140 h-65 rounded-2xl object-cover"
+          style="outline: 1px solid #c9c9c9; outline-offset: 10px;"
+        >
       </div>
       
     </div>
