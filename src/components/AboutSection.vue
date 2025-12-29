@@ -80,7 +80,26 @@ import aboutImage from '../assets/about.png'
           style="outline: 1px solid #c9c9c9; outline-offset: 10px;"
         >
       </div>
-      
     </div>
   </section>
+    <div class="max-w mx-auto bg-primary py-4 px-8">
+      <div class="grid grid-cols-4 gap-8">
+        <div class="text-center">
+          <h3 class="text-white text-4xl font-bold mb-2">8</h3>
+          <p class="text-white text-sm font-medium">Years of Service</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-white text-4xl font-bold mb-2">459</h3>
+          <p class="text-white text-sm font-medium">Sq. Meter Area</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-white text-4xl font-bold mb-2">50</h3>
+          <p class="text-white text-sm font-medium">Nice Rooms</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-white text-4xl font-bold mb-2">3786</h3>
+          <p class="text-white text-sm font-medium">Happy Visitors</p>
+        </div>
+      </div>
+    </div>
 </template>
