@@ -3,15 +3,15 @@ import aboutImage from '../assets/about.png'
 </script>
 
 <template>
-  <section id="about" class="py-7 px-10">
+  <section id="about" class="pt-5">
 
-    <div class="flex justify-center mb-10">
+    <div class="px-10 flex justify-center mb-10">
       <p class="text-title text-sm font-semibold tracking-wide">
         — About Us — 
       </p>
     </div>
         
-    <div class="max-w-7xl mx-auto grid grid-cols-2 gap-12 items-start mt-10">
+    <div class="px-10 max-w-7xl mx-auto grid grid-cols-2 gap-12 items-start mt-10">
       
       <div class="relative">
         <img 
@@ -37,7 +37,7 @@ import aboutImage from '../assets/about.png'
         
         <p class="text-muted text-sm leading-relaxed mb-4">
           Autem temporibus, neque voluptas officiis molestiae. At vero eos et 
-          accusamus et iusto odio dignissimos ducimus. But hey, at least you’re not stuck in traffic, 
+          accusamus et iusto odio dignissimos ducimus. But hey, at least you're not stuck in traffic, 
           or worse, listening to a never-ending sales pitch, right?
         </p>
         
@@ -48,7 +48,7 @@ import aboutImage from '../assets/about.png'
       
     </div>
 
-    <div class="max-w-7xl mx-auto grid grid-cols-2 gap-12 items-start mt-8">
+    <div class="px-10 max-w-7xl mx-auto grid grid-cols-2 gap-12 items-start mt-8">
       
       <div>
         <h2 class="text-heading text-4xl font-bold mb-4">
@@ -76,13 +76,13 @@ import aboutImage from '../assets/about.png'
         <img 
           :src="aboutImage" 
           alt="About JustStay" 
-          class="w-140 h-65 rounded-2xl object-cover"
+          class="w-140 h-63 rounded-2xl object-cover"
           style="outline: 1px solid #c9c9c9; outline-offset: 10px;"
         >
       </div>
     </div>
-  </section>
-    <div class="max-w mx-auto bg-primary py-4 px-8">
+
+    <div class="w-full bg-primary py-4 px-8 mt-12">
       <div class="grid grid-cols-4 gap-8">
         <div class="text-center">
           <h3 class="text-white text-4xl font-bold mb-2">8</h3>
@@ -102,4 +102,6 @@ import aboutImage from '../assets/about.png'
         </div>
       </div>
     </div>
+
+  </section>
 </template>
