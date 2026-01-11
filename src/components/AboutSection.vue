@@ -1,5 +1,12 @@
 <script setup>
 import aboutImage from '../assets/about.png'
+
+const stats = [
+  { value: '8', label: 'Years of Service' },
+  { value: '459', label: 'Sq. Meter Area' },
+  { value: '50', label: 'Nice Rooms' },
+  { value: '3786', label: 'Happy Visitors' }
+]
 </script>
 
 <template>
@@ -17,13 +24,12 @@ import aboutImage from '../assets/about.png'
         <img 
           :src="aboutImage" 
           alt="About JustStay" 
-          class="w-full md:w-4/5 md:mx-auto lg:w-full lg:max-h-70 h-auto rounded-2xl object-cover"
-          style="outline: 1px solid #c9c9c9; outline-offset: 10px;"
+          loading="lazy"
+          class="w-full md:w-4/5 md:mx-auto lg:w-full lg:max-h-70 h-auto rounded-2xl object-cover outline-1 outline-solid outline-outline outline-offset-7"
         >
       </div>
 
       <div>
-
         <h2 class="text-heading text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
           History of Just<span class="text-primary">Stay</span>
         </h2>
@@ -76,29 +82,25 @@ import aboutImage from '../assets/about.png'
         <img 
           :src="aboutImage" 
           alt="About JustStay" 
-          class="w-full md:w-4/5 md:mx-auto lg:w-full lg:max-h-70 h-auto rounded-2xl object-cover"
-          style="outline: 1px solid #c9c9c9; outline-offset: 10px;"
+          loading="lazy"
+          class="w-full md:w-4/5 md:mx-auto lg:w-full lg:max-h-70 h-auto rounded-2xl object-cover outline-1 outline-solid outline-outline outline-offset-7"
         >
       </div>
     </div>
 
     <div class="w-full bg-primary py-6 sm:py-8 lg:py-4 px-4 sm:px-6 lg:px-8 mt-12">
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-        <div class="text-center">
-          <h3 class="text-white text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">8</h3>
-          <p class="text-white text-xs sm:text-sm font-medium">Years of Service</p>
-        </div>
-        <div class="text-center">
-          <h3 class="text-white text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">459</h3>
-          <p class="text-white text-xs sm:text-sm font-medium">Sq. Meter Area</p>
-        </div>
-        <div class="text-center">
-          <h3 class="text-white text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">50</h3>
-          <p class="text-white text-xs sm:text-sm font-medium">Nice Rooms</p>
-        </div>
-        <div class="text-center">
-          <h3 class="text-white text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">3786</h3>
-          <p class="text-white text-xs sm:text-sm font-medium">Happy Visitors</p>
+        <div 
+          v-for="stat in stats" 
+          :key="stat.label" 
+          class="text-center"
+        >
+          <h3 class="text-white text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">
+            {{ stat.value }}
+          </h3>
+          <p class="text-white text-xs sm:text-sm font-medium">
+            {{ stat.label }}
+          </p>
         </div>
       </div>
     </div>
