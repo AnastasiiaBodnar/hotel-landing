@@ -18,8 +18,8 @@ const toggleMenu = () => {
     <ul class="hidden md:flex gap-6 lg:gap-8 font-medium">
       <li><a href="#home" class="hover:text-primary transition">Home</a></li>
       <li><a href="#about" class="hover:text-primary transition">About</a></li>
-      <li><a href="#services" class="hover:text-primary transition">Services</a></li>
       <li><a href="#rooms" class="hover:text-primary transition">Rooms</a></li>
+      <li><a href="#services" class="hover:text-primary transition">Services</a></li>
       <li><a href="#contact" class="hover:text-primary transition">Contact</a></li>
     </ul>
 
@@ -56,7 +56,7 @@ const toggleMenu = () => {
     >
       <ul class="flex flex-col gap-8 text-center font-medium text-2xl">
         <li 
-          v-for="(item, index) in ['Home', 'About', 'Services', 'Rooms', 'Contact']" 
+          v-for="(item, index) in ['Home', 'About', 'Rooms', 'Services', 'Contact']" 
           :key="item"
           class="transition-all duration-500 delay-75"
           :class="isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'"

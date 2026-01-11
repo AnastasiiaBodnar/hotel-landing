@@ -12,7 +12,7 @@ const rooms = [
 
 <template>
     <section id="rooms" class="pt-8 md:pt-10 xl:pt-12 bg-background  pb-8 md:pb-10 xl:pb-5">
-        <div class="px-5 md:px-10 text-center mb-6 md:mb-8 lg:mb-11">
+        <div class="px-5 md:px-10 text-center mb-6 md:mb-8 lg:mb-12">
             <p class="text-title text-xs md:text-sm font-semibold tracking-wide">
                 — Our Rooms — 
             </p>
