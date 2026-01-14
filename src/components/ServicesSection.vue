@@ -5,6 +5,15 @@ import foodIcon from '../assets/food.png'
 import spaIcon from '../assets/spa.png'
 import eventIcon from '../assets/event.png'
 import gymIcon from '../assets/gym.png'
+
+const services = [
+    { id: 1, icon: roomsIcon, title: 'Rooms & Appartment', description: 'Figma ipsum component variant main layer.' },
+    { id: 2, icon: sportsIcon, title: 'Sports & Gaming', description: 'Figma ipsum component variant main layer.' },
+    { id: 3, icon: foodIcon, title: 'Food & Restaurant', description: 'Figma ipsum component variant main layer.' },
+    { id: 4, icon: spaIcon, title: 'Spa & Fitness', description: 'Figma ipsum component variant main layer.' },
+    { id: 5, icon: eventIcon, title: 'Event & Party', description: 'Figma ipsum component variant main layer.' },
+    { id: 6, icon: gymIcon, title: 'GYM & Yoga', description: 'Figma ipsum component variant main layer.' }    
+]
 </script>
 
 <template>
@@ -17,45 +26,18 @@ import gymIcon from '../assets/gym.png'
 
         <div>
             <h2>
-                Explore Our <span class="text-primary">Services</span>
+                Explore Our <span>Services</span>
             </h2>
         </div>
 
         <div>
-            <div>
-                <img :src="roomsIcon" alt="Rooms Icon">
-                <h3>Rooms & Appartment</h3>
-                <p>Figma ipsum component variant main layer.</p>
-            </div>
-
-            <div>
-                <img :src="sportsIcon" alt="Sports Icon">
-                <h3>Sports & Gaming</h3>
-                <p>Figma ipsum component variant main layer.</p>
-            </div>
-
-            <div>
-                <img :src="foodIcon" alt="Food Icon">
-                <h3>Food & Restaurant</h3>
-                <p>Figma ipsum component variant main layer.</p>
-            </div>
-
-            <div>
-                <img :src="spaIcon" alt="Spa Icon">
-                <h3>Spa & Fitness</h3>
-                <p>Figma ipsum component variant main layer.</p>
-            </div>
-
-            <div>
-                <img :src="eventIcon" alt="Event Icon">
-                <h3>Event & Party</h3>
-                <p>Figma ipsum component variant main layer.</p>
-            </div>
-
-            <div>
-                <img :src="gymIcon" alt="Gym Icon">
-                <h3>GYM & Yoga</h3>
-                <p>Figma ipsum component variant main layer.</p>
+            <div 
+                v-for="service in services"
+                :key="service.id"
+            >
+                <img :src="service.icon" :alt="service.title">
+                <h3>{{ service.title }}</h3>
+                <p>{{ service.description }}</p>
             </div>
         </div>
     </section>
