@@ -17,29 +17,29 @@ const services = [
 </script>
 
 <template>
-    <section id="services" class="pt-12 pb-12">
+    <section id="services" class="pt-12 pb-10">
         <div class="px-10 text-center mb-12">
             <p class="text-title text-sm font-semibold tracking-wide">
                 — Our Services —
             </p>
         </div>
 
-        <div class="md-10 text-center mb-15">
+        <div class="md-10 text-center mb-16">
             <h2 class="text-heading text-5xl font-bold mt-5">
                 Explore Our <span class="text-primary">Services</span>
             </h2>
         </div>
 
-        <div class="max-w-7xl mx-auto grid grid-cols-3 gap-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-3 gap-6 px-4">
             <div 
                 v-for="service in services"
                 :key="service.id"
-                class="bg-white p-12 text-center transition-shadow border border-border"
+                class="bg-white p-10 text-center transition-shadow border border-border"
             >
-                <img :src="service.icon" :alt="service.title" class="mx-auto mb-4 h-8">
-                <h3 class="text-text font-bold text-xl">
+                <img :src="service.icon" :alt="service.title" class="mx-auto mb-4 h-12 w-12">
+                <h3 class="text-text font-bold text-lg mb-2">
                     {{ service.title }}</h3>
-                <p class="text-muted">
+                <p class="text-muted text-sm">
                     {{ service.description }}</p>
             </div>
         </div>
