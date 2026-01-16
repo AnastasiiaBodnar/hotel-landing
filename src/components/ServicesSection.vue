@@ -34,12 +34,12 @@ const services = [
             <div 
                 v-for="service in services"
                 :key="service.id"
-                class="bg-white p-10 text-center transition-shadow border border-border"
+                class="bg-white p-10 text-center transition-all duration-300 border border-border hover:bg-primary hover:text-white hover:shadow-lg group cursor-pointer"
             >
-                <img :src="service.icon" :alt="service.title" class="mx-auto mb-4 h-12 w-12">
-                <h3 class="text-text font-bold text-lg mb-2">
+                <img :src="service.icon" :alt="service.title" class="mx-auto mb-4 h-12 w-12 group-hover:brightness-0 group-hover:invert">
+                <h3 class="text-text font-bold text-lg mb-2 group-hover:text-white">
                     {{ service.title }}</h3>
-                <p class="text-muted text-sm">
+                <p class="text-muted text-sm group-hover:text-white">
                     {{ service.description }}</p>
             </div>
         </div>
