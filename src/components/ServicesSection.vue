@@ -17,24 +17,24 @@ const services = [
 </script>
 
 <template>
-    <section id="services" class="pt-12 pb-10">
-        <div class="px-10 text-center mb-12">
-            <p class="text-title text-sm font-semibold tracking-wide">
+    <section id="services" class="pt-8 pb-8 sm:pt-10 sm:pb-10 md:pt-12 md:pb-10">
+        <div class="px-4 sm:px-6 md:px-10 text-center mb-8 md:mb-12">
+            <p class="text-title text-xs sm:text-sm font-semibold tracking-wide">
                 — Our Services —
             </p>
         </div>
 
-        <div class="md-10 text-center mb-16">
-            <h2 class="text-heading text-5xl font-bold mt-5">
+        <div class="px-4 sm:px-6 md:px-10 text-center mb-10 md:mb-16">
+            <h2 class="text-heading text-3xl sm:text-4xl md:text-5xl font-bold mt-3 md:mt-5">
                 Explore Our <span class="text-primary">Services</span>
             </h2>
         </div>
 
-        <div class="max-w-7xl mx-auto grid grid-cols-3 gap-6 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
             <div 
                 v-for="service in services"
                 :key="service.id"
-                class="bg-white p-10 text-center transition-all duration-300 border border-border hover:bg-primary hover:text-white hover:shadow-lg group cursor-pointer"
+                class="bg-white p-6 sm:p-8 md:p-10 text-center transition-all duration-300 border border-border hover:bg-primary hover:text-white hover:shadow-lg group cursor-pointer"
             >
                 <img :src="service.icon" :alt="service.title" class="mx-auto mb-4 h-12 w-12 group-hover:brightness-0 group-hover:invert">
                 <h3 class="text-text font-bold text-lg mb-2 group-hover:text-white">
