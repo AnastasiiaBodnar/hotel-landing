@@ -8,37 +8,37 @@
 </script>
 
 <template>
-    <section>
-        <div>
-           <p>
+    <section id="testimonial" class=" pt-12 pb-17">
+        <div class="text-center px-10 mb-12">
+           <p class="text-title text-sm font-semibold tracking-wide">
             — Testimonial —
            </p> 
         </div>
 
-        <div>
-            <h2>
-                What People Say?
+        <div class="px-10 text-center mb-16">
+            <h2 class="text-heading text-5xl font-bold mt-5">
+                What People <span class="text-primary">Say?</span>
             </h2>
         </div>
 
-        <div class="grid grid-cols-4 gap-6">
-
+        <div class="max-w-7xl mx-auto grid grid-cols-4 gap-6 px-4 pb-15">
             <div 
                 v-for="item in testimonials"
                 :key="item.id"
-                class="text-center"
+                class="text-center p-10"
             >
 
-            <div>”</div>
-                <p>
+            <div class="text-primary text-6xl font-extrabold">”</div>
+
+                <p class="text-price font-medium text-lg mb-5">
                     {{ item.text }}
                 </p>
 
-                <h3>
+                <h3 class="text-heading font-medium text-base mb-3">
                     {{ item.name }}
                 </h3>
 
-                <p>
+                <p class="text-muted font-medium text-sm">
                     {{ item.email }}
                 </p>
             </div>
