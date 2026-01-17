@@ -8,37 +8,37 @@
 </script>
 
 <template>
-    <section id="testimonial" class=" pt-12 pb-17">
-        <div class="text-center px-10 mb-12">
-           <p class="text-title text-sm font-semibold tracking-wide">
+    <section id="testimonial" class=" pt-12 xl:pt-25 pb-17 xl:pb-22">
+        <div class="px-4 sm:px-6 md:px-10 text-center mb-6 md:mb-12">
+           <p class="text-title text-xs sm:text-sm font-semibold tracking-wide">
             — Testimonial —
            </p> 
         </div>
 
-        <div class="px-10 text-center mb-16">
-            <h2 class="text-heading text-5xl font-bold mt-5">
+        <div class="px-4 sm:px-6 md:px-10 text-center mb-5 lg:mb-16">
+            <h2 class="text-heading text-4xl md:text-5xl font-bold mt-5">
                 What People <span class="text-primary">Say?</span>
             </h2>
         </div>
 
-        <div class="max-w-7xl mx-auto grid grid-cols-4 gap-6 px-4 pb-15">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
             <div 
                 v-for="item in testimonials"
                 :key="item.id"
-                class="text-center p-10"
+                class="text-center p-4 lg:p-10"
             >
 
             <div class="text-primary text-6xl font-extrabold">”</div>
 
-                <p class="text-price font-medium text-lg mb-5">
+                <p class="text-price text-center font-medium lg:text-base mb-5">
                     {{ item.text }}
                 </p>
 
-                <h3 class="text-heading font-medium text-base mb-3">
+                <h3 class="text-heading text-center font-medium text-base mb-3">
                     {{ item.name }}
                 </h3>
 
-                <p class="text-muted font-medium text-sm">
+                <p class="text-muted text-center font-medium text-sm break-all">
                     {{ item.email }}
                 </p>
             </div>
