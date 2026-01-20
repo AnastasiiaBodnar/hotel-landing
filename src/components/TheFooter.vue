@@ -26,6 +26,7 @@ const contact = [
   { id: 1, name: '+91 1234567890', href: 'tel:+911234567890' },
   { id: 2, name: 'info@juststay.com', href: 'mailto:info@juststay.com' },
   { id: 3, name: 'Ahmedabad, India', href: '#contact' },
+
 ]
 </script>
 
@@ -33,9 +34,9 @@ const contact = [
   <footer id="contact" class="bg-background pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
         
-        <div class="lg:col-span-1">
+        <div class="lg:col-span-1 text-center md:text-left">
           <h3 class="text-heading text-2xl font-bold mb-4">
             Just<span class="text-primary">Stay</span>
           </h3>
@@ -47,7 +48,7 @@ const contact = [
           </p>
         </div>
 
-        <div class="lg:col-span-1">
+        <div class="lg:col-span-1 text-center md:text-left">
           <h3 class="text-heading text-lg font-bold mb-6">
             Quick Links
           </h3>
@@ -63,7 +64,7 @@ const contact = [
           </ul>
         </div>
 
-        <div class="lg:col-span-1">
+        <div class="lg:col-span-1 text-center md:text-left">
           <h3 class="text-heading text-lg font-bold mb-6">
             Our Services
           </h3>
@@ -79,7 +80,7 @@ const contact = [
           </ul>
         </div>
 
-        <div class="lg:col-span-1">
+        <div class="lg:col-span-1 text-center md:text-left">
           <h3 class="text-heading text-lg font-bold mb-6">
             Our Rooms
           </h3>
@@ -95,7 +96,7 @@ const contact = [
           </ul>
         </div>
 
-        <div class="lg:col-span-1">
+        <div class="lg:col-span-1 text-center md:text-left">
           <h3 class="text-heading text-lg font-bold mb-6">
             Contact Us
           </h3>
